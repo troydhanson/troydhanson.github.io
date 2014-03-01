@@ -1,0 +1,29 @@
+Code catalog
+------------
+Troy D. Hanson <tdh@tkhanson.net>
+
+About
+~~~~~
+This page is a catalog of my open source projects.
+
+[width="95%",cols="^20s,40,40",frame="topbot",grid="none"]
+|========================================================================================
+|pmtr              |an easy init tool to run your daemons |http://troydhanson.github.com/pmtr
+|uthash            |a hash table for C structures         |http://troydhanson.github.com/uthash
+|tpl               |binary serialization for C            |http://troydhanson.github.com/tpl
+|scripts & snippets|reusable bits of C, scripts, etc      |http://troydhanson.github.com/misc
+|kvspool           |a streaming data library              |http://troydhanson.github.com/kvspool
+|zcontrol          |a ØMQ/ZeroMQ control port library     |http://troydhanson.github.com/zcontrol
+|========================================================================================
+
+Etc
+~~~
+* My link:virtual_memory.pdf[Virtual Memory in a Nutshell] slides (pdf). Related http://troydhanson.wordpress.com/2010/07/18/virtual-memory-in-a-nutshell[post].
+
+News
+~~~~
+I tweet news on these projects and post to http://troydhanson.wordpress.com/[my blog] image:rss.png[(RSS)].
+
+include::twitter.txt[]
+
+// vim: set tw=80 wm=2 nowrap syntax=asciidoc: 
