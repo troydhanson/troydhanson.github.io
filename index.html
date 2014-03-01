@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="generator" content="AsciiDoc 8.6.8">
+<meta name="generator" content="AsciiDoc 8.6.7">
 <title></title>
 <style type="text/css">
 /* Shared CSS for AsciiDoc xhtml11 and html5 backends */
@@ -86,14 +86,10 @@ ul, ol, li > p {
 ul > li     { color: #aaa; }
 ul > li > * { color: black; }
 
-.monospaced, code, pre {
-  font-family: "Courier New", Courier, monospace;
-  font-size: inherit;
-  color: navy;
+pre {
   padding: 0;
   margin: 0;
 }
-
 
 #author {
   color: #527bbd;
@@ -222,7 +218,7 @@ div.exampleblock > div.content {
 }
 
 div.imageblock div.content { padding-left: 0; }
-span.image img { border-style: none; vertical-align: text-bottom; }
+span.image img { border-style: none; }
 a.image:visited { color: white; }
 
 dl {
@@ -418,6 +414,12 @@ div.unbreakable { page-break-inside: avoid; }
  *
  * */
 
+tt {
+  font-family: "Courier New", Courier, monospace;
+  font-size: inherit;
+  color: navy;
+}
+
 div.tableblock {
   margin-top: 1.0em;
   margin-bottom: 1.5em;
@@ -450,6 +452,12 @@ div.tableblock > table[frame="vsides"] {
  * html5 specific
  *
  * */
+
+.monospaced {
+  font-family: "Courier New", Courier, monospace;
+  font-size: inherit;
+  color: navy;
+}
 
 table.tableblock {
   margin-top: 1.0em;
@@ -530,8 +538,6 @@ body.manpage div.sectionbody {
 @media print {
   body.manpage div#toc { display: none; }
 }
-
-
 </style>
 <script type="text/javascript">
 /*<![CDATA[*/
@@ -749,33 +755,33 @@ width:95%;
 <tbody>
 <tr>
 <td class="tableblock halign-center valign-top" ><p class="tableblock"><strong>pmtr</strong></p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock">an easy init tool to run your daemons</p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock"><a href="http://troydhanson.github.com/pmtr">http://troydhanson.github.com/pmtr</a></p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">run your servers without initscripts</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock"><a href="http://troydhanson.github.io/pmtr">http://troydhanson.github.io/pmtr</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-center valign-top" ><p class="tableblock"><strong>uthash</strong></p></td>
 <td class="tableblock halign-left valign-top" ><p class="tableblock">a hash table for C structures</p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock"><a href="http://troydhanson.github.com/uthash">http://troydhanson.github.com/uthash</a></p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock"><a href="http://troydhanson.github.io/uthash">http://troydhanson.github.io/uthash</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-center valign-top" ><p class="tableblock"><strong>tpl</strong></p></td>
 <td class="tableblock halign-left valign-top" ><p class="tableblock">binary serialization for C</p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock"><a href="http://troydhanson.github.com/tpl">http://troydhanson.github.com/tpl</a></p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock"><a href="http://troydhanson.github.io/tpl">http://troydhanson.github.io/tpl</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-center valign-top" ><p class="tableblock"><strong>scripts &amp; snippets</strong></p></td>
 <td class="tableblock halign-left valign-top" ><p class="tableblock">reusable bits of C, scripts, etc</p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock"><a href="http://troydhanson.github.com/misc">http://troydhanson.github.com/misc</a></p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock"><a href="http://troydhanson.github.io/misc">http://troydhanson.github.io/misc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-center valign-top" ><p class="tableblock"><strong>kvspool</strong></p></td>
 <td class="tableblock halign-left valign-top" ><p class="tableblock">a streaming data library</p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock"><a href="http://troydhanson.github.com/kvspool">http://troydhanson.github.com/kvspool</a></p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock"><a href="http://troydhanson.github.io/kvspool">http://troydhanson.github.io/kvspool</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-center valign-top" ><p class="tableblock"><strong>zcontrol</strong></p></td>
 <td class="tableblock halign-left valign-top" ><p class="tableblock">a ØMQ/ZeroMQ control port library</p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock"><a href="http://troydhanson.github.com/zcontrol">http://troydhanson.github.com/zcontrol</a></p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock"><a href="http://troydhanson.github.io/zcontrol">http://troydhanson.github.io/zcontrol</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -788,11 +794,21 @@ width:95%;
 My <a href="virtual_memory.pdf">Virtual Memory in a Nutshell</a> slides (pdf). Related <a href="http://troydhanson.wordpress.com/2010/07/18/virtual-memory-in-a-nutshell">post</a>.
 </p>
 </li>
+<li>
+<p>
+Notes about <a href="http://troydhanson.github.io/misc/Unix_domain_sockets.html">Unix domain sockets and named pipes</a>
+</p>
+</li>
+<li>
+<p>
+Notes about <a href="http://troydhanson.github.io/misc/Entropy.html">measuring entropy of a byte stream</a>
+</p>
+</li>
 </ul></div>
 </div>
 <div class="sect2">
 <h3 id="_news">News</h3>
-<div class="paragraph"><p>I tweet news on these projects and post to <a href="http://troydhanson.wordpress.com/">my blog</a> <span class="image">
+<div class="paragraph"><p>I post news to Twitter and to <a href="http://troydhanson.wordpress.com/">my blog</a> <span class="image">
 <img src="rss.png" alt="(RSS)">
 </span>.</p></div>
 <div style="float:right">
@@ -808,7 +824,7 @@ My <a href="virtual_memory.pdf">Virtual Memory in a Nutshell</a> slides (pdf). R
 <div id="footnotes"><hr></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2013-03-13 01:03:13 EDT
+Last updated 2014-03-01 14:08:11 EST
 </div>
 </div>
 </body>

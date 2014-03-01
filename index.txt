@@ -8,21 +8,23 @@ This page is a catalog of my open source projects.
 
 [width="95%",cols="^20s,40,40",frame="topbot",grid="none"]
 |========================================================================================
-|pmtr              |an easy init tool to run your daemons |http://troydhanson.github.com/pmtr
-|uthash            |a hash table for C structures         |http://troydhanson.github.com/uthash
-|tpl               |binary serialization for C            |http://troydhanson.github.com/tpl
-|scripts & snippets|reusable bits of C, scripts, etc      |http://troydhanson.github.com/misc
-|kvspool           |a streaming data library              |http://troydhanson.github.com/kvspool
-|zcontrol          |a ØMQ/ZeroMQ control port library     |http://troydhanson.github.com/zcontrol
+|pmtr              |run your servers without initscripts  |http://troydhanson.github.io/pmtr
+|uthash            |a hash table for C structures         |http://troydhanson.github.io/uthash
+|tpl               |binary serialization for C            |http://troydhanson.github.io/tpl
+|scripts & snippets|reusable bits of C, scripts, etc      |http://troydhanson.github.io/misc
+|kvspool           |a streaming data library              |http://troydhanson.github.io/kvspool
+|zcontrol          |a ØMQ/ZeroMQ control port library     |http://troydhanson.github.io/zcontrol
 |========================================================================================
 
 Etc
 ~~~
 * My link:virtual_memory.pdf[Virtual Memory in a Nutshell] slides (pdf). Related http://troydhanson.wordpress.com/2010/07/18/virtual-memory-in-a-nutshell[post].
+* Notes about http://troydhanson.github.io/misc/Unix_domain_sockets.html[Unix domain sockets and named pipes]
+* Notes about http://troydhanson.github.io/misc/Entropy.html[measuring entropy of a byte stream]
 
 News
 ~~~~
-I tweet news on these projects and post to http://troydhanson.wordpress.com/[my blog] image:rss.png[(RSS)].
+I post news to Twitter and to http://troydhanson.wordpress.com/[my blog] image:rss.png[(RSS)].
 
 include::twitter.txt[]
 
