@@ -19,12 +19,13 @@ This page is a catalog of my open source projects.
 Etc
 ~~~
 * My link:virtual_memory.pdf[Virtual Memory in a Nutshell] slides (pdf). Related http://troydhanson.wordpress.com/2010/07/18/virtual-memory-in-a-nutshell[post].
+* A http://troydhanson.github.io/misc/initscripts.html[quick sampler of initscripts]
 * Notes about http://troydhanson.github.io/misc/Unix_domain_sockets.html[Unix domain sockets and named pipes]
 * Notes about http://troydhanson.github.io/misc/Entropy.html[measuring entropy of a byte stream]
 
 News
 ~~~~
-I post news to Twitter and to http://troydhanson.wordpress.com/[my blog] image:rss.png[(RSS)].
+* I post news to Twitter https://twitter.com/troydhanson[@troydhanson] and to http://troydhanson.wordpress.com/[my blog] image:rss.png[(RSS)].
 
 include::twitter.txt[]
 
