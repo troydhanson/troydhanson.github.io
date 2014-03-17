@@ -11,7 +11,7 @@ This page is a catalog of my open source projects.
 |pmtr              |run your servers without initscripts  |http://troydhanson.github.io/pmtr
 |uthash            |a hash table for C structures         |http://troydhanson.github.io/uthash
 |tpl               |binary serialization for C            |http://troydhanson.github.io/tpl
-|scripts & snippets|reusable bits of C, scripts, etc      |http://troydhanson.github.io/misc
+|C miscellany      |bits of C for networking, parsing, etc|http://troydhanson.github.io/misc
 |kvspool           |a streaming data library              |http://troydhanson.github.io/kvspool
 |zcontrol          |a ØMQ/ZeroMQ control port library     |http://troydhanson.github.io/zcontrol
 |========================================================================================
@@ -19,9 +19,11 @@ This page is a catalog of my open source projects.
 Etc
 ~~~
 * My link:virtual_memory.pdf[Virtual Memory in a Nutshell] slides (pdf). Related http://troydhanson.wordpress.com/2010/07/18/virtual-memory-in-a-nutshell[post].
-* If you need to write an initscript, here's a http://troydhanson.github.io/misc/initscripts.html[quick sampler of initscripts].
+* http://troydhanson.github.io/misc/initscripts.html[How to write an initscript] by copying one
 * Notes about http://troydhanson.github.io/misc/Unix_domain_sockets.html[Unix domain sockets and named pipes].
-* Notes about http://troydhanson.github.io/misc/Entropy.html[measuring entropy of a byte stream].
+* How to http://troydhanson.github.io/misc/Entropy.html[measure entropy of a byte stream].
+* Using the http://troydhanson.github.io/misc/lemon_notes.html[Lemon parser generator].
+* Notes about http://troydhanson.github.io/misc/bloom.html[how to write a Bloom filter].
 
 News
 ~~~~
