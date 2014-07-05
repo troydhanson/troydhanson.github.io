@@ -8,7 +8,7 @@ This page is a catalog of my open source projects.
 
 [width="95%",cols="^20s,40,40",frame="topbot",grid="none"]
 |========================================================================================
-|pmtr              |run your servers without initscripts  |http://troydhanson.github.io/pmtr
+|pmtr              |a process supervisor to run daemons   |http://troydhanson.github.io/pmtr
 |uthash            |a hash table for C structures         |http://troydhanson.github.io/uthash
 |tpl               |binary serialization for C            |http://troydhanson.github.io/tpl
 |C miscellany      |bits of C for networking, parsing, etc|http://troydhanson.github.io/misc
