@@ -25,7 +25,7 @@ Etc
 * Using the http://troydhanson.github.io/misc/lemon_notes.html[Lemon parser generator].
 * Notes about http://troydhanson.github.io/misc/bloom.html[how to write a Bloom filter].
 
-@troydhanson
+// @troydhanson
 
 // include::twitter.txt[]
 
