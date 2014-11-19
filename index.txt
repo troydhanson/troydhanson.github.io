@@ -23,10 +23,8 @@ Etc
 * Notes about http://troydhanson.github.io/misc/Unix_domain_sockets.html[Unix domain sockets and named pipes].
 * Notes about http://troydhanson.github.io/misc/Entropy.html[measuring entropy of a byte stream].
 
-News
-~~~~
-I post updates via https://twitter.com/troydhanson[@troydhanson] and to http://troydhanson.wordpress.com/[my blog] image:rss.png[(RSS)].
+https://twitter.com/troydhanson[@troydhanson] 
 
-include::twitter.txt[]
+// include::twitter.txt[]
 
 // vim: set tw=80 wm=2 nowrap syntax=asciidoc: 
