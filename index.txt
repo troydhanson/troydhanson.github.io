@@ -1,5 +1,5 @@
 Code listing 
-------------
+============
 Troy D. Hanson
 
 About me: I'm a low-level C/Linux programmer.  I've been doing Linux for 20+
