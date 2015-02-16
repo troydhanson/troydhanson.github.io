@@ -2,18 +2,19 @@
 This is a listing of my open source projects. Everything is in C. Well, almost
 everything.
 
-:t: https://github.com/troydhanson/
 :i: http://troydhanson.github.io/
 
 * {i}uthash[uthash], a hash table for C structures
 * {i}tpl[tpl], binary serialization for C
 * {i}pmtr[pmtr], to run programs at boot without initscripts
-* {t}kvspool[kvspool], a streaming data library in C
+* {i}kvspool[kvspool], a streaming data library in C
 * {i}network[network], TCP, UDP, DNS examples, etc, in C
+* {i}misc[misc], compression, parsing, sound, graphics, etc, in C
 
 These are rougher around the edges:
 
-* {i}misc[misc], compression, parsing, sound, graphics, etc, in C
+:t: https://github.com/troydhanson/
+
 * {t}kernel[kernel], kernel module examples
 * {t}libtcpsrv[libtcpsrv], a TCP/IPv6 server in C 
 
