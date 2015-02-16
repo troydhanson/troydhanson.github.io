@@ -1,9 +1,5 @@
-Code listing
-------------
-Troy D. Hanson
+Code listing - Troy D. Hanson
 
-About
-~~~~~
 I'm a low-level C/Linux programmer.  These are my open source projects:
 
 :t: https://github.com/troydhanson/
@@ -19,10 +15,10 @@ These are rougher around the edges:
 * {t}libtcpsrv[libtcpsrv], a TCP/IPv6 server
 * {t}misc[misc], sound, graphics, compression, parsing, etc
 
-Etc
-~~~
+Some of my technical docs:
+
 * My link:virtual_memory.pdf[Virtual Memory in a Nutshell] slides (pdf). 
-* How http://troydhanson.github.io/network/Unix_domain_sockets.html[Unix domain sockets] compare with named pipes.
+* How http://troydhanson.github.io/network-templates/Unix_domain_sockets.html[Unix domain sockets] compare with named pipes.
 * How to http://troydhanson.github.io/misc/Entropy.html[measure entropy] of a byte stream.
 * Using http://troydhanson.github.io/misc/lemon_notes.html[Lemon] the parser generator.
 * How to write a http://troydhanson.github.io/misc/bloom.html[Bloom filter].
