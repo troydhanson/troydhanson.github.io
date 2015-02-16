@@ -1,8 +1,4 @@
-Projects & Docs
-===============
-
-Projects
---------
+.Projects
 This is a listing of my open source projects. 
 
 :t: https://github.com/troydhanson/
@@ -18,8 +14,7 @@ These are rougher around the edges:
 * {t}kernel-modules[kernel-modules], kernel module examples
 * {t}libtcpsrv[libtcpsrv], a TCP/IPv6 server
 
-Docs
-----
+.Tech docs
 
 Some of my technical docs:
 
@@ -29,8 +24,7 @@ Some of my technical docs:
 * Using http://troydhanson.github.io/misc/lemon_notes.html[Lemon] the parser generator.
 * How to write a http://troydhanson.github.io/misc/bloom.html[Bloom filter].
 
-About 
------
+.About me
 
 I'm a low-level C/Linux programmer.  I've been doing Linux for 20+ years. As a
 kid I learned to program on the Apple IIc. I still remember those 6502 opcodes.
