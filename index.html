@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="generator" content="AsciiDoc 8.6.7">
+<meta name="generator" content="AsciiDoc 8.6.9">
 <title></title>
 <style type="text/css">
 /* Shared CSS for AsciiDoc xhtml11 and html5 backends */
@@ -86,9 +86,15 @@ ul, ol, li > p {
 ul > li     { color: #aaa; }
 ul > li > * { color: black; }
 
-pre {
+.monospaced, code, pre {
+  font-family: "Courier New", Courier, monospace;
+  font-size: inherit;
+  color: navy;
   padding: 0;
   margin: 0;
+}
+pre {
+  white-space: pre-wrap;
 }
 
 #author {
@@ -218,7 +224,7 @@ div.exampleblock > div.content {
 }
 
 div.imageblock div.content { padding-left: 0; }
-span.image img { border-style: none; }
+span.image img { border-style: none; vertical-align: text-bottom; }
 a.image:visited { color: white; }
 
 dl {
@@ -414,12 +420,6 @@ div.unbreakable { page-break-inside: avoid; }
  *
  * */
 
-tt {
-  font-family: "Courier New", Courier, monospace;
-  font-size: inherit;
-  color: navy;
-}
-
 div.tableblock {
   margin-top: 1.0em;
   margin-bottom: 1.5em;
@@ -452,12 +452,6 @@ div.tableblock > table[frame="vsides"] {
  * html5 specific
  *
  * */
-
-.monospaced {
-  font-family: "Courier New", Courier, monospace;
-  font-size: inherit;
-  color: navy;
-}
 
 table.tableblock {
   margin-top: 1.0em;
@@ -538,6 +532,8 @@ body.manpage div.sectionbody {
 @media print {
   body.manpage div#toc { display: none; }
 }
+
+
 </style>
 <script type="text/javascript">
 /*<![CDATA[*/
@@ -739,84 +735,79 @@ asciidoc.install();
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_code_catalog">Code catalog</h2>
+<h2 id="_code_listing">Code listing</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>Troy D. Hanson &lt;<a href="mailto:tdh@tkhanson.net">tdh@tkhanson.net</a>&gt;</p></div>
+<div class="paragraph"><p>Troy D. Hanson</p></div>
 <div class="sect2">
 <h3 id="_about">About</h3>
-<div class="paragraph"><p>This page is a catalog of my open source projects.</p></div>
-<table class="tableblock frame-topbot grid-none"
-style="
-width:95%;
-">
-<col style="width:20%;">
-<col style="width:40%;">
-<col style="width:40%;">
-<tbody>
-<tr>
-<td class="tableblock halign-center valign-top" ><p class="tableblock"><strong>pmtr</strong></p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock">a process supervisor to run daemons</p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock"><a href="http://troydhanson.github.io/pmtr">http://troydhanson.github.io/pmtr</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top" ><p class="tableblock"><strong>uthash</strong></p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock">a hash table for C structures</p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock"><a href="http://troydhanson.github.io/uthash">http://troydhanson.github.io/uthash</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top" ><p class="tableblock"><strong>tpl</strong></p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock">binary serialization for C</p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock"><a href="http://troydhanson.github.io/tpl">http://troydhanson.github.io/tpl</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top" ><p class="tableblock"><strong>C miscellany</strong></p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock">bits of C for networking, parsing, etc</p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock"><a href="http://troydhanson.github.io/misc">http://troydhanson.github.io/misc</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top" ><p class="tableblock"><strong>kvspool</strong></p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock">a streaming data library</p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock"><a href="http://troydhanson.github.io/kvspool">http://troydhanson.github.io/kvspool</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top" ><p class="tableblock"><strong>zcontrol</strong></p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock">a ØMQ/ZeroMQ control port library</p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock"><a href="http://troydhanson.github.io/zcontrol">http://troydhanson.github.io/zcontrol</a></p></td>
-</tr>
-</tbody>
-</table>
+<div class="paragraph"><p>I&#8217;m a low-level C/Linux programmer.  These are my open source projects:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+<a href="https://github.com/troydhanson/uthash">uthash</a>, a hash table for C structures
+</p>
+</li>
+<li>
+<p>
+<a href="https://github.com/troydhanson/tpl">tpl</a>, binary serialization for C
+</p>
+</li>
+<li>
+<p>
+<a href="https://github.com/troydhanson/pmtr">pmtr</a>, to run programs at boot without initscripts
+</p>
+</li>
+<li>
+<p>
+<a href="https://github.com/troydhanson/network-templates">network-templates</a>, TCP, UDP, DNS examples, etc
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>These are rougher around the edges:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+<a href="https://github.com/troydhanson/kernel-modules">kernel-modules</a>, kernel module examples
+</p>
+</li>
+<li>
+<p>
+<a href="https://github.com/troydhanson/libtcpsrv">libtcpsrv</a>, a TCP/IPv6 server
+</p>
+</li>
+<li>
+<p>
+<a href="https://github.com/troydhanson/misc">misc</a>, sound, graphics, compression, parsing, etc
+</p>
+</li>
+</ul></div>
 </div>
 <div class="sect2">
 <h3 id="_etc">Etc</h3>
 <div class="ulist"><ul>
 <li>
 <p>
-My <a href="virtual_memory.pdf">Virtual Memory in a Nutshell</a> slides (pdf). Related <a href="http://troydhanson.wordpress.com/2010/07/18/virtual-memory-in-a-nutshell">post</a>.
+My <a href="virtual_memory.pdf">Virtual Memory in a Nutshell</a> slides (pdf).
 </p>
 </li>
 <li>
 <p>
-<a href="http://troydhanson.github.io/misc/initscripts.html">How to write an initscript</a> by copying one
+How <a href="http://troydhanson.github.io/network/Unix_domain_sockets.html">Unix domain sockets</a> compare with named pipes.
 </p>
 </li>
 <li>
 <p>
-Notes about <a href="http://troydhanson.github.io/misc/Unix_domain_sockets.html">Unix domain sockets and named pipes</a>.
+How to <a href="http://troydhanson.github.io/misc/Entropy.html">measure entropy</a> of a byte stream.
 </p>
 </li>
 <li>
 <p>
-How to <a href="http://troydhanson.github.io/misc/Entropy.html">measure entropy of a byte stream</a>.
+Using <a href="http://troydhanson.github.io/misc/lemon_notes.html">Lemon</a> the parser generator.
 </p>
 </li>
 <li>
 <p>
-Using the <a href="http://troydhanson.github.io/misc/lemon_notes.html">Lemon parser generator</a>.
-</p>
-</li>
-<li>
-<p>
-Notes about <a href="http://troydhanson.github.io/misc/bloom.html">how to write a Bloom filter</a>.
+How to write a <a href="http://troydhanson.github.io/misc/bloom.html">Bloom filter</a>.
 </p>
 </li>
 </ul></div>
@@ -827,7 +818,7 @@ Notes about <a href="http://troydhanson.github.io/misc/bloom.html">how to write 
 <div id="footnotes"><hr></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2014-11-18 22:39:43 EST
+Last updated 2015-02-15 21:43:58 EST
 </div>
 </div>
 </body>
