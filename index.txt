@@ -2,12 +2,13 @@
 This is a listing of my open source projects. 
 
 :t: https://github.com/troydhanson/
+:i: http://troydhanson.github.io/
 
-* {t}uthash[uthash], a hash table for C structures
-* {t}tpl[tpl], binary serialization for C
-* {t}pmtr[pmtr], to run programs at boot without initscripts
-* {t}network-templates[network-templates], TCP, UDP, DNS examples, etc
-* {t}misc[misc], sound, graphics, compression, parsing, etc
+* {i}uthash[uthash], a hash table for C structures
+* {i}tpl[tpl], binary serialization for C
+* {i}pmtr[pmtr], to run programs at boot without initscripts
+* {i}network-templates[network-templates], TCP, UDP, DNS examples, etc
+* {i}misc[misc], sound, graphics, compression, parsing, etc
 
 These are rougher around the edges:
 
