@@ -1,5 +1,6 @@
 .Projects
-This is a listing of my open source projects. 
+This is a listing of my open source projects. Everything is in C. Well, almost
+everything.
 
 :t: https://github.com/troydhanson/
 :i: http://troydhanson.github.io/
@@ -7,25 +8,28 @@ This is a listing of my open source projects.
 * {i}uthash[uthash], a hash table for C structures
 * {i}tpl[tpl], binary serialization for C
 * {i}pmtr[pmtr], to run programs at boot without initscripts
-* {i}network-templates[network-templates], TCP, UDP, DNS examples, etc
-* {i}misc[misc], sound, graphics, compression, parsing, etc
+* {t}kvspool[kvspool], a streaming data library in C
+* {i}network[network], TCP, UDP, DNS examples, etc, in C
 
 These are rougher around the edges:
 
-* {t}kernel-modules[kernel-modules], kernel module examples
-* {t}libtcpsrv[libtcpsrv], a TCP/IPv6 server
+* {i}misc[misc], compression, parsing, sound, graphics, etc, in C
+* {t}kernel[kernel], kernel module examples
+* {t}libtcpsrv[libtcpsrv], a TCP/IPv6 server in C 
 
 .Tech docs
 
-Some of my technical docs:
+Some of my technical notes:
 
 * My link:virtual_memory.pdf[Virtual Memory in a Nutshell] slides (pdf). 
-* How http://troydhanson.github.io/network-templates/Unix_domain_sockets.html[Unix domain sockets] compare with named pipes.
+* How http://troydhanson.github.io/network/Unix_domain_sockets.html[Unix domain sockets] compare with named pipes.
 * How to http://troydhanson.github.io/misc/Entropy.html[measure entropy] of a byte stream.
-* Using http://troydhanson.github.io/misc/lemon_notes.html[Lemon] the parser generator.
+* Using the http://troydhanson.github.io/misc/lemon_notes.html[Lemon parser generator].
 * How to write a http://troydhanson.github.io/misc/bloom.html[Bloom filter].
 
 .About me
+
+image:tdh.png[Troy D. Hanson]
 
 I'm a low-level C/Linux programmer.  I've been doing Linux for 20+ years. As a
 kid I learned to program on the Apple IIc. I still remember those 6502 opcodes.
