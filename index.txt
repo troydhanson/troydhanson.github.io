@@ -1,4 +1,9 @@
-These are my open source projects:
+Projects & Docs
+===============
+
+Projects
+--------
+This is a listing of my open source projects. 
 
 :t: https://github.com/troydhanson/
 
@@ -6,12 +11,15 @@ These are my open source projects:
 * {t}tpl[tpl], binary serialization for C
 * {t}pmtr[pmtr], to run programs at boot without initscripts
 * {t}network-templates[network-templates], TCP, UDP, DNS examples, etc
+* {t}misc[misc], sound, graphics, compression, parsing, etc
 
 These are rougher around the edges:
 
 * {t}kernel-modules[kernel-modules], kernel module examples
 * {t}libtcpsrv[libtcpsrv], a TCP/IPv6 server
-* {t}misc[misc], sound, graphics, compression, parsing, etc
+
+Docs
+----
 
 Some of my technical docs:
 
@@ -21,7 +29,8 @@ Some of my technical docs:
 * Using http://troydhanson.github.io/misc/lemon_notes.html[Lemon] the parser generator.
 * How to write a http://troydhanson.github.io/misc/bloom.html[Bloom filter].
 
-About me: 
+About 
+-----
 
 I'm a low-level C/Linux programmer.  I've been doing Linux for 20+ years. As a
 kid I learned to program on the Apple IIc. I still remember those 6502 opcodes.
