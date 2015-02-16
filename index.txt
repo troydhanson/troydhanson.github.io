@@ -1,6 +1,11 @@
-Code listing - Troy D. Hanson
+Code listing 
+------------
+Troy D. Hanson
 
-I'm a low-level C/Linux programmer.  These are my open source projects:
+About me: I'm a low-level C/Linux programmer.  I've been doing Linux for 20+
+years. As a kid I learned to program on the Apple IIc.
+
+These are my open source projects:
 
 :t: https://github.com/troydhanson/
 
@@ -22,9 +27,5 @@ Some of my technical docs:
 * How to http://troydhanson.github.io/misc/Entropy.html[measure entropy] of a byte stream.
 * Using http://troydhanson.github.io/misc/lemon_notes.html[Lemon] the parser generator.
 * How to write a http://troydhanson.github.io/misc/bloom.html[Bloom filter].
-
-// @troydhanson
-
-// include::twitter.txt[]
 
 // vim: set tw=80 wm=2 nowrap syntax=asciidoc: 
