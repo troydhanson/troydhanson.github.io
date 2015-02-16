@@ -1,9 +1,5 @@
-Code listing 
-============
-Troy D. Hanson
-
-About me: I'm a low-level C/Linux programmer.  I've been doing Linux for 20+
-years. As a kid I learned to program on the Apple IIc.
+troydhanson.github.io
+=====================
 
 These are my open source projects:
 
@@ -27,5 +23,12 @@ Some of my technical docs:
 * How to http://troydhanson.github.io/misc/Entropy.html[measure entropy] of a byte stream.
 * Using http://troydhanson.github.io/misc/lemon_notes.html[Lemon] the parser generator.
 * How to write a http://troydhanson.github.io/misc/bloom.html[Bloom filter].
+
+About me: 
+
+I'm a low-level C/Linux programmer.  I've been doing Linux for 20+ years. As a
+kid I learned to program on the Apple IIc. I still remember those 6502 opcodes.
+
+Troy D. Hanson
 
 // vim: set tw=80 wm=2 nowrap syntax=asciidoc: 
