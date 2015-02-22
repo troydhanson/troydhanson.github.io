@@ -4,9 +4,9 @@ everything.
 
 :i: http://troydhanson.github.io/
 
-* {i}uthash[uthash], a hash table for C structures
 * {i}tpl[tpl], binary serialization for C
-* {i}pmtr[pmtr], to run programs at boot without initscripts
+* {i}uthash[uthash], a hash table for C structures
+* {i}pmtr[pmtr], to run a set of background servers
 * {i}kvspool[kvspool], a streaming data library in C
 * {i}network[network], TCP, UDP, DNS examples, etc, in C
 * {i}misc[misc], compression, parsing, sound, graphics, etc, in C
