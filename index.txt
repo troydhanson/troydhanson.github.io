@@ -9,7 +9,8 @@ everything.
 * {i}pmtr[pmtr], to run a set of background servers
 * {i}kvspool[kvspool], a streaming data library in C
 * {i}network[network], TCP, UDP, DNS examples, etc, in C
-* {i}misc[misc], compression, parsing, sound, graphics, etc, in C
+* {i}misc[misc], compression, parsing, graphics, etc, in C
+* {i}sound[sound] recording and playback with ALSA, and PCM in C 
 
 These are rougher around the edges:
 
