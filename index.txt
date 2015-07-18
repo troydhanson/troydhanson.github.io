@@ -25,7 +25,7 @@ Some of my technical notes:
 
 * My link:virtual_memory.pdf[Virtual Memory in a Nutshell] slides (pdf). 
 * How http://troydhanson.github.io/network/Unix_domain_sockets.html[Unix domain sockets] compare with named pipes.
-* How to http://troydhanson.github.io/misc/Entropy.html[measure entropy] of a byte stream.
+//* How to http://troydhanson.github.io/misc/Entropy.html[measure entropy] of a byte stream.
 * Using the http://troydhanson.github.io/misc/lemon_notes.html[Lemon parser generator].
 * How to write a http://troydhanson.github.io/misc/bloom.html[Bloom filter].
 
