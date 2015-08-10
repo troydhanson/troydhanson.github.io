@@ -7,11 +7,12 @@ everything.
 
 * {i}tpl[tpl], binary serialization for C
 * {i}uthash[uthash], a hash table for C structures
-* {i}pmtr[pmtr], to run a set of background servers
+* {i}pmtr[pmtr], a supervisor to run many processes
 * {i}kvspool[kvspool], a streaming data library in C
 * {i}network[network], TCP, UDP, DNS examples, etc, in C
 * {t}sound[sound] recording and playback and sine synthesis in C 
 * {i}misc[misc] pcre, lemon parser, cairo, epoll, inotify, etc, in C
+* {i}uthash[uthash bundles] linked lists, dynamic strings and dynamic arrays in C
 * {t}info-theory[info-theory] compression, Hamming codes, Bloom filters, etc, in C
 
 These are rougher around the edges:
