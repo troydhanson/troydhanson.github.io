@@ -5,20 +5,22 @@ everything.
 :i: http://troydhanson.github.io/
 :t: https://github.com/troydhanson/
 
-* {i}uthash[uthash], a hash table for C structures (+ linked lists + dynamic strings/arrays)
+* {i}uthash[uthash], a hash table for C structures (plus linked lists, dynamic
+                     strings and dynamic arrays in C)
 * {i}tpl[tpl], binary serialization for C
 * {i}pmtr[pmtr], a supervisor to run many processes
-* {i}kvspool[kvspool], a streaming data library in C
 * {i}network[network], TCP, UDP, DNS examples, etc, in C
-* {t}sound[sound] recording and playback and sine synthesis in C 
-* {i}misc[misc] pcre, lemon parser, cairo, epoll, inotify, etc, in C
+* {i}misc[misc] grab bag of templates for reading files, parsing, i/o, etc in C
 * {t}info-theory[info-theory] compression, Hamming codes, Bloom filters, etc, in C
 
 These are rougher around the edges:
 
 * {t}kernel[kernel], kernel module examples
 * {t}libtcpsrv[libtcpsrv], a TCP/IPv6 server in C 
-* {t}controlport[controlport] you can embed in a server
+* {t}controlport[controlport] to embed in a server
+* {i}kvspool[kvspool], streaming data as key-value sets from C 
+* {t}minecraft-nbt[minecraft-nbt] a library that parses NBT in C
+* {t}sound[sound] recording and playback and sine synthesis in C 
 
 .Tech docs
 
