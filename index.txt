@@ -17,7 +17,7 @@ everything.
 These are rougher around the edges:
 
 * {t}kernel[kernel], kernel module examples
-* {t}libtcpsrv[libtcpsrv], a TCP/IPv6 server in C 
+* {t}minecraft-nbt[Minecraft NBT] file parsing library
 * {t}controlport[controlport] you can embed in a server
 
 .Tech docs
