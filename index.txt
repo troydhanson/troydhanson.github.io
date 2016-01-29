@@ -5,20 +5,20 @@ everything.
 :i: http://troydhanson.github.io/
 :t: https://github.com/troydhanson/
 
-* {i}uthash[uthash], a hash table for C structures (+ linked lists + dynamic strings/arrays)
+* {i}uthash[uthash], a hash table for C structures, also linked lists, and dynamic strings in C
 * {i}tpl[tpl], binary serialization for C
-* {t}network[network], TCP, UDP, DNS examples, etc, in C
-* {i}misc[misc] pcre, lemon parser, cairo, epoll, inotify, etc, in C
-* {i}pmtr[pmtr], a single-config-file layer over systemd/initscripts
-* {i}kvspool[kvspool], a streaming data library in C
+* {t}network[network], TCP, UDP, DNS, etc, in C
+* {i}proctab[proctab], a simple service manager with one config file 
 
 These are rougher around the edges:
 
 * {t}kernel[kernel], kernel module examples
+* {i}kvspool[kvspool], a streaming data library in C
 * {t}minecraft-nbt[Minecraft NBT] file parsing library
 * {t}nnctl[nnctl] embed control port in a nanomsg server
-* {t}sound[sound] recording and playback and sine synthesis in C 
-* {t}info-theory[info-theory] compression, Hamming codes, Bloom filters, etc, in C
+* {t}sound[sound] basic PCM recording, playback, synthesis
+* {t}info-theory[info-theory] compression, error correcting codes, Bloom filters
+* {i}misc[misc] heap of examples e.g. epoll, inotify, asm, mmap, serial, scripts
 
 .Tech docs
 
