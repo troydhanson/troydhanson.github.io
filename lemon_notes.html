@@ -1,9 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="generator" content="AsciiDoc 8.6.9">
-<title></title>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<meta name="generator" content="AsciiDoc 8.6.7" />
+<title>Notes on using the Lemon parser generator</title>
 <style type="text/css">
 /* Shared CSS for AsciiDoc xhtml11 and html5 backends */
 
@@ -86,15 +87,9 @@ ul, ol, li > p {
 ul > li     { color: #aaa; }
 ul > li > * { color: black; }
 
-.monospaced, code, pre {
-  font-family: "Courier New", Courier, monospace;
-  font-size: inherit;
-  color: navy;
+pre {
   padding: 0;
   margin: 0;
-}
-pre {
-  white-space: pre-wrap;
 }
 
 #author {
@@ -224,7 +219,7 @@ div.exampleblock > div.content {
 }
 
 div.imageblock div.content { padding-left: 0; }
-span.image img { border-style: none; vertical-align: text-bottom; }
+span.image img { border-style: none; }
 a.image:visited { color: white; }
 
 dl {
@@ -420,6 +415,12 @@ div.unbreakable { page-break-inside: avoid; }
  *
  * */
 
+tt {
+  font-family: "Courier New", Courier, monospace;
+  font-size: inherit;
+  color: navy;
+}
+
 div.tableblock {
   margin-top: 1.0em;
   margin-bottom: 1.5em;
@@ -452,6 +453,12 @@ div.tableblock > table[frame="vsides"] {
  * html5 specific
  *
  * */
+
+.monospaced {
+  font-family: "Courier New", Courier, monospace;
+  font-size: inherit;
+  color: navy;
+}
 
 table.tableblock {
   margin-top: 1.0em;
@@ -532,8 +539,6 @@ body.manpage div.sectionbody {
 @media print {
   body.manpage div#toc { display: none; }
 }
-
-
 </style>
 <script type="text/javascript">
 /*<![CDATA[*/
@@ -732,104 +737,115 @@ asciidoc.install();
 </head>
 <body class="article">
 <div id="header">
+<h1>Notes on using the Lemon parser generator</h1>
+<span id="author">Troy D. Hanson</span><br />
+<span id="email"><tt>&lt;<a href="mailto:tdh@tkhanson.net">tdh@tkhanson.net</a>&gt;</tt></span><br />
+<span id="revdate">v1.0 December 2010</span>
 </div>
 <div id="content">
-<div class="paragraph"><div class="title">Projects</div><p>This is a listing of my open source projects. Everything is in C for Linux.
-Well, almost everything.</p></div>
-<div class="ulist"><ul>
-<li>
-<p>
-<a href="http://troydhanson.github.io/uthash">uthash</a> a hash table for C structures, with linked lists and dynamic strings in C
-</p>
-</li>
-<li>
-<p>
-<a href="http://troydhanson.github.io/proctab">proctab</a> runs several services from one config file in Linux
-</p>
-</li>
-<li>
-<p>
-<a href="https://github.com/troydhanson/network">network</a> examples of TCP, UDP, DNS, etc, in C
-</p>
-</li>
-<li>
-<p>
-<a href="http://troydhanson.github.io/tpl">tpl</a> binary serialization for C
-</p>
-</li>
-</ul></div>
-<div class="paragraph"><p>These are rougher around the edges:</p></div>
-<div class="ulist"><ul>
-<li>
-<p>
-<a href="https://github.com/troydhanson/kernel">kernel</a>, kernel module examples
-</p>
-</li>
-<li>
-<p>
-<a href="http://troydhanson.github.io/kvspool">kvspool</a>, a streaming data library in C
-</p>
-</li>
-<li>
-<p>
-<a href="https://github.com/troydhanson/minecraft-nbt">Minecraft NBT</a> file parsing library
-</p>
-</li>
-<li>
-<p>
-<a href="https://github.com/troydhanson/nnctl">nnctl</a> embed control port in a nanomsg server
-</p>
-</li>
-<li>
-<p>
-<a href="https://github.com/troydhanson/sound">sound</a> basic PCM recording, playback, synthesis
-</p>
-</li>
-<li>
-<p>
-<a href="https://github.com/troydhanson/info-theory">info-theory</a> compression, error correcting codes, Bloom filters
-</p>
-</li>
-<li>
-<p>
-<a href="https://github.com/troydhanson/misc">misc</a> heap of examples e.g. epoll, inotify, asm, mmap, serial, scripts
-</p>
-</li>
-</ul></div>
-<div class="paragraph"><div class="title">Tech docs</div><p>Some of my technical notes:</p></div>
-<div class="ulist"><ul>
-<li>
-<p>
-My <a href="virtual_memory.pdf">Virtual Memory in a Nutshell</a> slides (pdf).
-</p>
-</li>
-<li>
-<p>
-How <a href="http://troydhanson.github.io/network/Unix_domain_sockets.html">Unix domain sockets</a> compare with named pipes.
-</p>
-</li>
-<li>
-<p>
-Using the <a href="lemon_notes.html">Lemon parser generator</a>.
-</p>
-</li>
-<li>
-<p>
-How to write a <a href="https://github.com/troydhanson/info-theory/blob/master/bloom-filter/README.md">Bloom filter</a>.
-</p>
-</li>
-</ul></div>
-<div class="paragraph"><div class="title">About me</div><p><span class="image">
-<img src="tdh.png" alt="Troy D. Hanson">
-</span></p></div>
-<div class="paragraph"><p>I&#8217;m a low-level C/Linux programmer.  I&#8217;ve been doing Linux for 20+ years. As a
-kid I learned to program on the Apple IIc. I still remember those 6502 opcodes.</p></div>
-<div class="paragraph"><p>Troy D. Hanson</p></div>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph"><p>The notes below refer to this <a href="https://github.com/troydhanson/misc/tree/master/text_handling/lemon">example parser that I built using Lemon</a>.</p></div>
 </div>
-<div id="footnotes"><hr></div>
+</div>
+<div class="sect1">
+<h2 id="_lemon_parser_generator">Lemon parser generator</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>Lemon is a C parser generator by D. Richard Hipp. See the <a href="https://github.com/troydhanson/misc/blob/master/text_handling/lemon/lemon.txt">Lemon documentation</a>.</p></div>
+<div class="sect2">
+<h3 id="_the_grammar">The grammar</h3>
+<div class="paragraph"><p>The grammer goes in the ".y" file, which in our case is cfg.y. It&#8217;s a list of
+grammar rules from which the parse tree will be constructed when tokens are
+passed to the generated parser.  Some rules have actions in curly braces. The
+actions can refer to the terminal or non-terminals in the rule using a (SYMBOL)
+notation as you can see in cfg.y. When a line of grammar is recognized it is "reduced"
+and its rule is executed. (It&#8217;s "executed" by being literally copied into the
+generated parser, in some sub-function of Parse, having access to the extra
+argument described below, and with some way to set its own "non-terminal" value and
+access the "values" of the terminals and non-terminals on the right-hand-side of
+its rule). By the way that "extra argument" feature is a nice way to pass your
+whole parsing state between the main program and the generated parsing
+functions, without using globals (and thus enabling multiple instances of your
+parser to coexist if you keep everything clean). In our case we defined parse_t
+to hold the line number, file name, and a parsing status, as well as a pointer
+to the current top of our scratch space.</p></div>
+<div class="paragraph"><div class="title">Bottom up parsing</div><p>A lower-level grammar rule must reduce before a higher-level
+grammar rule in which it&#8217;s contained.  So, from a parse tree viewpoint, the
+leaf nodes are created before the higher level grammatical nodes. This means
+the grammar actions must have a strategy for passing the leaf values up to the
+higher level nodes.  This could be done by using a generic node structure;
+i.e. the earlier child node would get attached to the later parent node. This is
+more complexity than we need for our example. So we do it another way.</p></div>
+<div class="paragraph"><div class="title">Simpler record parsing</div><p>If what you&#8217;re parsing are essentially "records" (instead of some complicated
+tree structured input like a C program) you can use a simpler approach.</p></div>
+<div class="paragraph"><p>Just create a "scratch record" (your workspace). All the lower-level rules will
+just "fill in" their values in that scratch record, as their grammar action.
+When the higher level rule is reduced, that scratch record is just validated and
+pushed onto the list of parsed records.</p></div>
+<div class="paragraph"><p>In our example, the scratch record is just the top of the vector of servers. So
+at the program startup we push a scratch top (using the newtop macro). Whenever
+we finish parsing a record, we push a new top which is always the scratch space.
+At the end of parsing we throw away (pop) the top because it was our scratch
+space.</p></div>
+</div>
+<div class="sect2">
+<h3 id="_token_recognition">Token recognition</h3>
+<div class="paragraph"><p>The first step to parsing anything is to break it into lexical tokens. You can
+do this in any way you want. Lemon does not help you here, it only defines an
+integer "token id", for each terminal in your grammar, see cfg.h. It wants you
+to pass these id&#8217;s in sequentially, to represent the "token stream" being parsed.</p></div>
+<div class="paragraph"><p>The lexer/tokenizer&#8217;s job is simple: produce a list of tokens. Each token is
+identified by its integer id. E.g. TOK_LCURLY, TOK_SERVER, etc. Each token a
+value in addition to its id. For example a token with id TOK_NUMBER might have
+the value "1234". The tokens (terminals) all have the same data type determined
+by the %token_type directive [default int]. In our example code we use a char*
+for our tokens.  Whenever a token is identified, we make a string from it and
+pass that char* and its associated integer token id into the lemon-generated
+Parse function.</p></div>
+<div class="paragraph"><div class="title">Regular expressions</div><p>A nice way to tokenize the input would be to define a bunch of regular
+expressions (e.g. using PCRE) and then apply them in a specified order til one
+hits. But this example doesn&#8217;t need that complexity.</p></div>
+<div class="paragraph"><div class="title">Simple custom lexer</div><p>See the tok.c file for our simple lexical analyzer. It just reads a minimal
+number of characters until a keyword is recognized or a whitespace-delimited
+number or dotted-alphanumeric string is found. As a bonus feature it also keeps
+track of our line number so that we can print nice error messages during
+lexing/parsing.</p></div>
+</div>
+<div class="sect2">
+<h3 id="_final_thoughts">Final thoughts</h3>
+<div class="paragraph"><div class="title">Careful memory management of the terminals!</div><p>This bit me once or twice while learning how to write parsers. Recognize that
+lemon has a stack internally that keeps its state as it shifts and reduces
+rules. The token that your lexer passes in to Parse, will persist on that Lemon
+stack (maybe a long time) while other tokens are shifted. So, whatever token
+values you pass in, <em>cannot</em> be overwritten or reused while parsing proceeds.</p></div>
+<div class="paragraph"><p>In other words, don&#8217;t just re-use the same char* as your token value and keep
+passing it into Lemon for each token-- you need a unique char* for each one. If
+you&#8217;re lazy you can just strndup() every token before calling Parse
+(and then you could define the %token_destructor to free() each one). There&#8217;s
+nothing wrong with that approach. I prefer a more manually-tracked approach so
+I strndup each token and throw it onto a vector of tokens before passing it
+into Parse. At the conclusion of parsing I iterate over that token vector and
+free all of them.</p></div>
+<div class="paragraph"><p>Within my grammar actions in cfg.y, the "value" of each terminal is a pointer
+to one of those strings in my token vector. I write my grammar actions so that
+they, in turn, make their own copies of any tokens (strings) they want to "keep
+around" for inclusion in the final parsing result. This way I can free my token
+vector without worrying about whether the parsing result has remaining pointers
+into the token vector.</p></div>
+<div class="paragraph"><div class="title">Why lex and parse in unison?</div><p>As a side note you could "lex" the whole input into tokens (keeping the string
+and the integer id for each token, and if you want to be friendly, the line
+number it was on) prior to doing any parsing at all. I.e. the parsing could be
+done in an entirely separate phase using the pre-prepared token vector.
+But doing the lexing and the parsing in concert means that you can avoid the
+cost of further lexical analysis if you encounter a grammar error.</p></div>
+</div>
+</div>
+</div>
+</div>
+<div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-02-03 19:40:52 EST
+Last updated 2014-03-17 01:51:42 EDT
 </div>
 </div>
 </body>

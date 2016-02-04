@@ -1,14 +1,14 @@
 .Projects
-This is a listing of my open source projects. Everything is in C. Well, almost
-everything.
+This is a listing of my open source projects. Everything is in C for Linux.
+Well, almost everything.
 
 :i: http://troydhanson.github.io/
 :t: https://github.com/troydhanson/
 
-* {i}uthash[uthash], a hash table for C structures, also linked lists, and dynamic strings in C
-* {i}tpl[tpl], binary serialization for C
-* {t}network[network], TCP, UDP, DNS, etc, in C
-* {i}proctab[proctab], a simple service manager with one config file 
+* {i}uthash[uthash] a hash table for C structures, with linked lists and dynamic strings in C
+* {i}proctab[proctab] runs several services from one config file in Linux
+* {t}network[network] examples of TCP, UDP, DNS, etc, in C
+* {i}tpl[tpl] binary serialization for C
 
 These are rougher around the edges:
 
@@ -18,7 +18,7 @@ These are rougher around the edges:
 * {t}nnctl[nnctl] embed control port in a nanomsg server
 * {t}sound[sound] basic PCM recording, playback, synthesis
 * {t}info-theory[info-theory] compression, error correcting codes, Bloom filters
-* {i}misc[misc] heap of examples e.g. epoll, inotify, asm, mmap, serial, scripts
+* {t}misc[misc] heap of examples e.g. epoll, inotify, asm, mmap, serial, scripts
 
 .Tech docs
 
@@ -26,7 +26,7 @@ Some of my technical notes:
 
 * My link:virtual_memory.pdf[Virtual Memory in a Nutshell] slides (pdf). 
 * How http://troydhanson.github.io/network/Unix_domain_sockets.html[Unix domain sockets] compare with named pipes.
-* Using the http://troydhanson.github.io/misc/lemon_notes.html[Lemon parser generator].
+* Using the link:lemon_notes.html[Lemon parser generator].
 * How to write a https://github.com/troydhanson/info-theory/blob/master/bloom-filter/README.md[Bloom filter].
 
 .About me
