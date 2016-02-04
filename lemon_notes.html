@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-<meta name="generator" content="AsciiDoc 8.6.7" />
+<meta name="generator" content="AsciiDoc 8.6.9" />
 <title>Notes on using the Lemon parser generator</title>
 <style type="text/css">
 /* Shared CSS for AsciiDoc xhtml11 and html5 backends */
@@ -87,9 +87,15 @@ ul, ol, li > p {
 ul > li     { color: #aaa; }
 ul > li > * { color: black; }
 
-pre {
+.monospaced, code, pre {
+  font-family: "Courier New", Courier, monospace;
+  font-size: inherit;
+  color: navy;
   padding: 0;
   margin: 0;
+}
+pre {
+  white-space: pre-wrap;
 }
 
 #author {
@@ -219,7 +225,7 @@ div.exampleblock > div.content {
 }
 
 div.imageblock div.content { padding-left: 0; }
-span.image img { border-style: none; }
+span.image img { border-style: none; vertical-align: text-bottom; }
 a.image:visited { color: white; }
 
 dl {
@@ -415,12 +421,6 @@ div.unbreakable { page-break-inside: avoid; }
  *
  * */
 
-tt {
-  font-family: "Courier New", Courier, monospace;
-  font-size: inherit;
-  color: navy;
-}
-
 div.tableblock {
   margin-top: 1.0em;
   margin-bottom: 1.5em;
@@ -453,12 +453,6 @@ div.tableblock > table[frame="vsides"] {
  * html5 specific
  *
  * */
-
-.monospaced {
-  font-family: "Courier New", Courier, monospace;
-  font-size: inherit;
-  color: navy;
-}
 
 table.tableblock {
   margin-top: 1.0em;
@@ -539,6 +533,8 @@ body.manpage div.sectionbody {
 @media print {
   body.manpage div#toc { display: none; }
 }
+
+
 </style>
 <script type="text/javascript">
 /*<![CDATA[*/
@@ -739,19 +735,19 @@ asciidoc.install();
 <div id="header">
 <h1>Notes on using the Lemon parser generator</h1>
 <span id="author">Troy D. Hanson</span><br />
-<span id="email"><tt>&lt;<a href="mailto:tdh@tkhanson.net">tdh@tkhanson.net</a>&gt;</tt></span><br />
+<span id="email"><code>&lt;<a href="mailto:tdh@tkhanson.net">tdh@tkhanson.net</a>&gt;</code></span><br />
 <span id="revdate">v1.0 December 2010</span>
 </div>
 <div id="content">
 <div id="preamble">
 <div class="sectionbody">
-<div class="paragraph"><p>The notes below refer to this <a href="https://github.com/troydhanson/misc/tree/master/text_handling/lemon">example parser that I built using Lemon</a>.</p></div>
+<div class="paragraph"><p>The notes below refer to this <a href="https://github.com/troydhanson/misc/tree/master/lemon">example parser that I built using Lemon</a>.</p></div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_lemon_parser_generator">Lemon parser generator</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>Lemon is a C parser generator by D. Richard Hipp. See the <a href="https://github.com/troydhanson/misc/blob/master/text_handling/lemon/lemon.txt">Lemon documentation</a>.</p></div>
+<div class="paragraph"><p>Lemon is a C parser generator by D. Richard Hipp. See the <a href="https://github.com/troydhanson/misc/blob/master/lemon/lemon.txt">Lemon documentation</a>.</p></div>
 <div class="sect2">
 <h3 id="_the_grammar">The grammar</h3>
 <div class="paragraph"><p>The grammer goes in the ".y" file, which in our case is cfg.y. It&#8217;s a list of
@@ -845,7 +841,7 @@ cost of further lexical analysis if you encounter a grammar error.</p></div>
 <div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2014-03-17 01:51:42 EDT
+Last updated 2016-02-03 19:51:47 EST
 </div>
 </div>
 </body>
