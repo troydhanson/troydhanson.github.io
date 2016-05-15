@@ -6,15 +6,14 @@ Well, almost everything.
 :t: https://github.com/troydhanson/
 
 * {i}uthash[uthash] a hash table for C structures, with linked lists and dynamic strings in C
-* {i}proctab[proctab] runs several services from one config file in Linux
-* {t}network[network] examples of TCP, UDP, DNS, etc, in C
+* {i}pmtr[pmtr] runs several services from one config file in Linux
+* {t}network[network] examples of TCP, UDP, DNS, raw sockets, etc, in C
 * {i}tpl[tpl] binary serialization for C
 
 These are rougher around the edges:
 
 * {t}kernel[kernel], kernel module examples
 * {i}kvspool[kvspool], a streaming data library in C
-* {t}minecraft-nbt[Minecraft NBT] file parsing library
 * {t}nnctl[nnctl] embed control port in a nanomsg server
 * {t}sound[sound] basic PCM recording, playback, synthesis
 * {t}info-theory[info-theory] compression, error correcting codes, Bloom filters
