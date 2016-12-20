@@ -6,18 +6,17 @@ Well, almost everything.
 :t: https://github.com/troydhanson/
 
 * {i}uthash[uthash] a hash table for C structures, with linked lists and dynamic strings in C
-* {i}pmtr[pmtr] runs several services from one config file in Linux
-* {t}network[network] examples of TCP, UDP, DNS, raw sockets, etc, in C
+* {t}network[network] examples of TCP, UDP, DNS, raw sockets, CIDR math, etc, in C
+* {i}pmtr[pmtr] a light process supervisor with everything in one config file 
+* {t}fluxcap[fluxcap] a tool to replicate, aggregate and retransmit network taps
 * {i}tpl[tpl] binary serialization for C
 
 These are rougher around the edges:
 
-* {t}kernel[kernel], kernel module examples
-* {i}kvspool[kvspool], a streaming data library in C
-* {t}nnctl[nnctl] embed control port in a nanomsg server
+* {t}kernel[kernel] module examples
 * {t}sound[sound] basic PCM recording, playback, synthesis
 * {t}info-theory[info-theory] compression, error correcting codes, Bloom filters
-* {t}misc[misc] heap of examples e.g. epoll, inotify, asm, mmap, serial, scripts
+* {t}misc[misc] heap of examples e.g. epoll, mmap, serial, scripts
 
 .Tech docs
 
