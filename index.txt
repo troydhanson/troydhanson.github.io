@@ -14,9 +14,9 @@ Well, almost everything.
 These are rougher around the edges:
 
 * {t}kernel[kernel] module examples
-* {t}sound[sound] basic PCM recording, playback, synthesis
-* {t}info-theory[info-theory] compression, error correcting codes, Bloom filters
-* {t}misc[misc] heap of examples e.g. epoll, mmap, serial, scripts
+* {t}sound[sound] basic PCM capture, playback, synthesis
+* {t}info-theory[data] compression, error correcting codes, Bloom filters
+* {t}boiler[misc] heap of examples e.g. epoll, mmap, serial, scripts
 
 .Tech docs
 

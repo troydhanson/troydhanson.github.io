@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="generator" content="AsciiDoc 8.6.9">
+<meta name="generator" content="AsciiDoc 8.6.7">
 <title></title>
 <style type="text/css">
 /* Shared CSS for AsciiDoc xhtml11 and html5 backends */
@@ -86,15 +86,9 @@ ul, ol, li > p {
 ul > li     { color: #aaa; }
 ul > li > * { color: black; }
 
-.monospaced, code, pre {
-  font-family: "Courier New", Courier, monospace;
-  font-size: inherit;
-  color: navy;
+pre {
   padding: 0;
   margin: 0;
-}
-pre {
-  white-space: pre-wrap;
 }
 
 #author {
@@ -224,7 +218,7 @@ div.exampleblock > div.content {
 }
 
 div.imageblock div.content { padding-left: 0; }
-span.image img { border-style: none; vertical-align: text-bottom; }
+span.image img { border-style: none; }
 a.image:visited { color: white; }
 
 dl {
@@ -420,6 +414,12 @@ div.unbreakable { page-break-inside: avoid; }
  *
  * */
 
+tt {
+  font-family: "Courier New", Courier, monospace;
+  font-size: inherit;
+  color: navy;
+}
+
 div.tableblock {
   margin-top: 1.0em;
   margin-bottom: 1.5em;
@@ -452,6 +452,12 @@ div.tableblock > table[frame="vsides"] {
  * html5 specific
  *
  * */
+
+.monospaced {
+  font-family: "Courier New", Courier, monospace;
+  font-size: inherit;
+  color: navy;
+}
 
 table.tableblock {
   margin-top: 1.0em;
@@ -532,8 +538,6 @@ body.manpage div.sectionbody {
 @media print {
   body.manpage div#toc { display: none; }
 }
-
-
 </style>
 <script type="text/javascript">
 /*<![CDATA[*/
@@ -772,17 +776,17 @@ Well, almost everything.</p></div>
 </li>
 <li>
 <p>
-<a href="https://github.com/troydhanson/sound">sound</a> basic PCM recording, playback, synthesis
+<a href="https://github.com/troydhanson/sound">sound</a> basic PCM capture, playback, synthesis
 </p>
 </li>
 <li>
 <p>
-<a href="https://github.com/troydhanson/info-theory">info-theory</a> compression, error correcting codes, Bloom filters
+<a href="https://github.com/troydhanson/info-theory">data</a> compression, error correcting codes, Bloom filters
 </p>
 </li>
 <li>
 <p>
-<a href="https://github.com/troydhanson/misc">misc</a> heap of examples e.g. epoll, mmap, serial, scripts
+<a href="https://github.com/troydhanson/boiler">misc</a> heap of examples e.g. epoll, mmap, serial, scripts
 </p>
 </li>
 </ul></div>
@@ -819,8 +823,7 @@ kid I learned to program on the Apple IIc. I still remember those 6502 opcodes.<
 <div id="footnotes"><hr></div>
 <div id="footer">
 <div id="footer-text">
-Last updated
- 2016-12-20 00:13:15 EST
+Last updated 2017-01-19 20:13:17 EST
 </div>
 </div>
 </body>
