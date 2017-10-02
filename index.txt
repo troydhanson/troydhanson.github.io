@@ -13,10 +13,9 @@ Well, almost everything.
 
 These are rougher around the edges:
 
+* {t}boiler[misc] examples e.g. epoll, mmap, pipes, dlsym, etc
 * {t}kernel[kernel] module examples
-* {t}sound[sound] basic PCM capture, playback, synthesis
 * {t}info-theory[data] compression, error correcting codes, Bloom filters
-* {t}boiler[misc] heap of examples e.g. epoll, mmap, serial, scripts
 
 .Tech docs
 
@@ -35,5 +34,7 @@ I'm a low-level C/Linux programmer.  I've been doing Linux for 20+ years. As a
 kid I learned to program on the Apple IIc. I still remember those 6502 opcodes.
 
 Troy D. Hanson
+
+link:pgp.html[PGP public key]
 
 // vim: set tw=80 wm=2 nowrap syntax=asciidoc: 
