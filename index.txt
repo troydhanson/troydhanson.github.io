@@ -35,6 +35,6 @@ kid I learned to program on the Apple IIc. I still remember those 6502 opcodes.
 
 Troy D. Hanson
 
-link:pgp.html[PGP public key]
+link:RPM-GPG-KEY-troydhanson.html[GPG public key]
 
 // vim: set tw=80 wm=2 nowrap syntax=asciidoc: 
