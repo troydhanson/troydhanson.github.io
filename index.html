@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="generator" content="AsciiDoc 8.6.8">
+<meta name="generator" content="AsciiDoc 8.6.9">
 <title></title>
 <style type="text/css">
 /* Shared CSS for AsciiDoc xhtml11 and html5 backends */
@@ -93,7 +93,9 @@ ul > li > * { color: black; }
   padding: 0;
   margin: 0;
 }
-
+pre {
+  white-space: pre-wrap;
+}
 
 #author {
   color: #527bbd;
@@ -222,7 +224,7 @@ div.exampleblock > div.content {
 }
 
 div.imageblock div.content { padding-left: 0; }
-span.image img { border-style: none; }
+span.image img { border-style: none; vertical-align: text-bottom; }
 a.image:visited { color: white; }
 
 dl {
@@ -732,27 +734,37 @@ asciidoc.install();
 <div id="header">
 </div>
 <div id="content">
-<div class="paragraph"><div class="title">Projects</div><p>This is a listing of my open source projects. Everything is in C for Linux.
-Well, almost everything.</p></div>
+<div class="paragraph"><div class="title">Projects</div><p>Here are some of my projects. Everything is in C for Linux.</p></div>
+<div class="paragraph"><p>I am putting my priorities on life outside of code these days. Open source
+is a great way to push your own boundaries but it can also be a huge drain.
+Live life with your family, your friends, go on the adventure together. If
+people code in different languages than you do, let them be. Treat them like
+your neighbor who does woodworking in his garage. It&#8217;s a pastime for some of
+us. Build because building is what you do. We aren&#8217;t here to win each others
+approval or to be better than anyone.</p></div>
+<div class="paragraph"><p>I keep these up from time to time.</p></div>
 <div class="ulist"><ul>
 <li>
 <p>
-<a href="http://troydhanson.github.io/uthash">uthash</a> a hash table for C structures, with linked lists and dynamic strings in C
+<a href="https://github.com/troydhanson/network">network</a> examples of TCP, UDP, DNS, a CIDR calculator, etc in C
 </p>
 </li>
 <li>
 <p>
-<a href="https://github.com/troydhanson/network">network</a> examples of TCP, UDP, DNS, raw sockets, CIDR math, etc, in C
+<a href="http://troydhanson.github.io/pmtr">pmtr</a> a process supervisor with everything in one config file
 </p>
 </li>
 <li>
 <p>
-<a href="http://troydhanson.github.io/pmtr">pmtr</a> a light process supervisor with everything in one config file
+<a href="https://github.com/troydhanson/fluxcap">fluxcap</a> a software network packet broker
 </p>
 </li>
+</ul></div>
+<div class="paragraph"><p>Previous projects. Others maintain these now, or help to maintain them.</p></div>
+<div class="ulist"><ul>
 <li>
 <p>
-<a href="https://github.com/troydhanson/fluxcap">fluxcap</a> a tool to replicate, aggregate and retransmit network taps
+<a href="http://troydhanson.github.io/uthash">uthash</a> a hash table for C structures
 </p>
 </li>
 <li>
@@ -761,25 +773,7 @@ Well, almost everything.</p></div>
 </p>
 </li>
 </ul></div>
-<div class="paragraph"><p>These are rougher around the edges:</p></div>
-<div class="ulist"><ul>
-<li>
-<p>
-<a href="https://github.com/troydhanson/boiler">misc</a> examples e.g. epoll, mmap, pipes, dlsym, etc
-</p>
-</li>
-<li>
-<p>
-<a href="https://github.com/troydhanson/kernel">kernel</a> module examples
-</p>
-</li>
-<li>
-<p>
-<a href="https://github.com/troydhanson/info-theory">data</a> compression, error correcting codes, Bloom filters
-</p>
-</li>
-</ul></div>
-<div class="paragraph"><div class="title">Tech docs</div><p>Some of my technical notes:</p></div>
+<div class="paragraph"><p>Some technical notes:</p></div>
 <div class="ulist"><ul>
 <li>
 <p>
@@ -788,17 +782,7 @@ My <a href="virtual_memory.pdf">Virtual Memory in a Nutshell</a> slides (pdf).
 </li>
 <li>
 <p>
-How <a href="http://troydhanson.github.io/network/Unix_domain_sockets.html">Unix domain sockets</a> compare with named pipes.
-</p>
-</li>
-<li>
-<p>
-Using the <a href="lemon_notes.html">Lemon parser generator</a>.
-</p>
-</li>
-<li>
-<p>
-How to write a <a href="https://github.com/troydhanson/info-theory/blob/master/bloom-filter/README.md">Bloom filter</a>.
+A bit about <a href="http://troydhanson.github.io/network/Unix_domain_sockets.html">Unix domain sockets</a>
 </p>
 </li>
 </ul></div>
@@ -813,7 +797,8 @@ kid I learned to program on the Apple IIc. I still remember those 6502 opcodes.<
 <div id="footnotes"><hr></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-10-04 04:41:59 UTC
+Last updated
+ 2017-11-19 17:56:17 PST
 </div>
 </div>
 </body>
