@@ -20,15 +20,6 @@ Some technical notes:
 * My link:virtual_memory.pdf[Virtual Memory in a Nutshell] slides (pdf). 
 * A bit about http://troydhanson.github.io/network/Unix_domain_sockets.html[Unix domain sockets]
 
-.About me
-
-image:tdh.png[Troy D. Hanson]
-
-I'm a low-level C/Linux programmer.  I've been doing Linux for 20+ years. As a
-kid I learned to program on the Apple IIc. I still remember those 6502 opcodes.
-
-Troy D. Hanson
-
 link:RPM-GPG-KEY-troydhanson.html[GPG public key]
 
 // vim: set tw=80 wm=2 nowrap syntax=asciidoc: 
